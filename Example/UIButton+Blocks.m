@@ -7,7 +7,7 @@
 //
 
 #import "UIButton+Blocks.h"
-#import <objc/runtime.h>
+#import <objc/message.h>
 static char *overViewKey;
 
 @implementation UIButton (Blocks)

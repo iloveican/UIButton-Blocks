@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "UIButton+Blocks.h"
+#import "DEMO-Swift.h"
 
 #define MDScreenWidth     CGRectGetWidth([[UIScreen mainScreen] bounds])
 #define MDScreenHeight    CGRectGetHeight([[[UIApplication sharedApplication].delegate window] bounds])
@@ -25,11 +26,12 @@
     [self.view addSubview:button];
     
     button.backgroundColor = [[UIColor orangeColor] colorWithAlphaComponent:0.8];
-    [button setTitle:@"Blocks" forState:UIControlStateNormal];
+    [button setTitle:@"toSwiftVC" forState:UIControlStateNormal];
 
     //default UIControlEventTouchUpInside
     [button handleClickWithClickBlick:^(UIButton *sender) {
         NSLog(@"%s",__func__);
+        [self.navigationController pushViewController:[SwiftViewController new] animated:YES];
 
     }];
     

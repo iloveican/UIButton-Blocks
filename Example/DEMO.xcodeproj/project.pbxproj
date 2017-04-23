@@ -14,6 +14,7 @@
 		FA4A07471EACD79E00B19F72 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA4A07461EACD79E00B19F72 /* Assets.xcassets */; };
 		FA4A074A1EACD79E00B19F72 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA4A07481EACD79E00B19F72 /* LaunchScreen.storyboard */; };
 		FA4A07571EACD8A600B19F72 /* UIButton+Blocks.m in Sources */ = {isa = PBXBuildFile; fileRef = FA4A07561EACD8A600B19F72 /* UIButton+Blocks.m */; };
+		FA8783091EAD214F008EB7B3 /* SwiftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8783081EAD214F008EB7B3 /* SwiftViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,8 @@
 		FA4A074B1EACD79E00B19F72 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FA4A07551EACD89C00B19F72 /* UIButton+Blocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+Blocks.h"; sourceTree = "<group>"; };
 		FA4A07561EACD8A600B19F72 /* UIButton+Blocks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Blocks.m"; sourceTree = "<group>"; };
+		FA8783071EAD214E008EB7B3 /* DEMO-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DEMO-Bridging-Header.h"; sourceTree = "<group>"; };
+		FA8783081EAD214F008EB7B3 /* SwiftViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,11 +70,13 @@
 				FA4A073E1EACD79E00B19F72 /* AppDelegate.m */,
 				FA4A07401EACD79E00B19F72 /* ViewController.h */,
 				FA4A07411EACD79E00B19F72 /* ViewController.m */,
+				FA8783081EAD214F008EB7B3 /* SwiftViewController.swift */,
 				FA4A07431EACD79E00B19F72 /* Main.storyboard */,
 				FA4A07461EACD79E00B19F72 /* Assets.xcassets */,
 				FA4A07481EACD79E00B19F72 /* LaunchScreen.storyboard */,
 				FA4A074B1EACD79E00B19F72 /* Info.plist */,
 				FA4A073A1EACD79E00B19F72 /* Supporting Files */,
+				FA8783071EAD214E008EB7B3 /* DEMO-Bridging-Header.h */,
 			);
 			path = DEMO;
 			sourceTree = "<group>";
@@ -116,6 +121,7 @@
 					FA4A07361EACD79E00B19F72 = {
 						CreatedOnToolsVersion = 8.3.1;
 						DevelopmentTeam = H3EQ3M53T9;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -159,6 +165,7 @@
 				FA4A07421EACD79E00B19F72 /* ViewController.m in Sources */,
 				FA4A073F1EACD79E00B19F72 /* AppDelegate.m in Sources */,
 				FA4A073C1EACD79E00B19F72 /* main.m in Sources */,
+				FA8783091EAD214F008EB7B3 /* SwiftViewController.swift in Sources */,
 				FA4A07571EACD8A600B19F72 /* UIButton+Blocks.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -279,11 +286,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = H3EQ3M53T9;
 				INFOPLIST_FILE = DEMO/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = momo.DEMO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "DEMO/DEMO-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -291,11 +302,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = H3EQ3M53T9;
 				INFOPLIST_FILE = DEMO/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = momo.DEMO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "DEMO/DEMO-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -318,6 +332,7 @@
 				FA4A07501EACD79E00B19F72 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
