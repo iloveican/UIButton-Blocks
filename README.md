@@ -29,8 +29,7 @@ An UIButton Category replace SEL with Block.
 
 **Code:**
 
-```
-Objective-C
+```objc
 
     UIButton* button = [UIButton buttonWithType:UIButtonTypeCustom];
     button.frame = CGRectMake((MDScreenWidth-100)*0.5, (MDScreenHeight-100)*0.5, 100, 100);
@@ -54,8 +53,8 @@ Objective-C
           
 ```
 
-     Swift
-          
+     
+     ## Swift   
      You can use UIButton+Blocks in Swift projects too.
      To do this, you must:
 
@@ -65,15 +64,15 @@ Objective-C
 
      3. In your bridging header, add a line that says:
      
-    ```
-    #import "UIButton+Blocks.h"
+    ```objc
+    #import "UIButton+Blocks.h"
     ```
 
     If you do the above, you can then write Swift code that uses UIButton+Blocks. For example, in Swift 3:
      
-     swift
      
-     ```
+     
+     ```swift
         let btn = UIButton(frame: CGRect(origin: CGPoint.zero, size: CGSize(width: 100, height: 100)))
         btn.center = view.center
         btn.backgroundColor = UIColor.purple
@@ -84,7 +83,6 @@ Objective-C
             print("\("SwiftViewController") \(#function)")
             
         }
-
      ```
 
      
