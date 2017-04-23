@@ -29,7 +29,7 @@ An UIButton Category replace SEL with Block.
 
 **Code:**
 
-```objc
+```Objective-C
 
     UIButton* button = [UIButton buttonWithType:UIButtonTypeCustom];
     button.frame = CGRectMake((MDScreenWidth-100)*0.5, (MDScreenHeight-100)*0.5, 100, 100);
@@ -50,6 +50,40 @@ An UIButton Category replace SEL with Block.
      NSLog(@"%s",__func__);
      }];
      */
+     
+     
+     Swift
+     
+     You can use UIButton+Blocks in Swift projects too.
+     To do this, you must:
+
+    1. Copy the relevant .m and .h files from the UIButton+Blocks src folder into your project.
+    2. If prompted to create a "bridging header", you should do so. If not prompted and if you don't already have a bridging     header, add one.
+    (For more information on temporary and in-memory databases, read the sqlite documentation on the subject: http://www.sqlite.org/inmemorydb.html)
+
+     3. In your bridging header, add a line that says:
+    ```objc
+    #import "UIButton+Blocks.h"
+    ```
+    
+    If you do the above, you can then write Swift code that uses UIButton+Blocks. For example, in Swift 3:
+     
+     
+     ```swift
+        let btn = UIButton(frame: CGRect(origin: CGPoint.zero, size: CGSize(width: 100, height: 100)))
+        btn.center = view.center
+        btn.backgroundColor = UIColor.purple
+        btn.setTitle("SwiftVC", for: UIControlState.normal)
+        view.addSubview(btn)
+        
+        btn.handleClick { (btn:UIButton?) in
+            print("\("SwiftViewController") \(#function)")
+            
+        }
+
+```
+
+     
      
 ```
 
