@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
   s.requires_arc = true
 
 
-  s.platform     = :ios, "7.0"
+  s.platform     = :ios, "5.0"
 
   s.source       = { :git => "https://github.com/JZJJZJ/UIButton-Blocks.git", :tag => s.version }
 
