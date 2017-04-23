@@ -13,37 +13,49 @@
 #define MDScreenWidth     CGRectGetWidth([[UIScreen mainScreen] bounds])
 #define MDScreenHeight    CGRectGetHeight([[[UIApplication sharedApplication].delegate window] bounds])
 @interface ViewController ()
-
-@end
+    @property(nonatomic,strong)UIButton* button;
+    @end
 
 @implementation ViewController
     
-
+    
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.title = @"touchesBegan to SwiftVC";
-    UIButton* button = [UIButton buttonWithType:UIButtonTypeCustom];
-    button.frame = CGRectMake((MDScreenWidth-100)*0.5, (MDScreenHeight-100)*0.5, 100, 100);
-    [self.view addSubview:button];
+    [self.view addSubview:self.button];
     
-    button.backgroundColor = [[UIColor orangeColor] colorWithAlphaComponent:0.8];
-    [button setTitle:@"toSwiftVC" forState:UIControlStateNormal];
-
     //default UIControlEventTouchUpInside
-    [button handleClickWithClickBlick:^(UIButton *sender) {
+    [self.button handleClickWithClickBlick:^(UIButton *sender) {
         NSLog(@"ViewController %s",__func__);
-
+        
     }];
     
     /*
-     [button handleClickEvent:UIControlEventTouchUpInside withClickBlick:^(UIButton *sender) {
+     [self.button handleClickEvent:UIControlEventTouchUpInside withClickBlick:^(UIButton *sender) {
      NSLog(@"%s",__func__);
      }];
      */
 }
-
+    
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
     [self.navigationController pushViewController:[SwiftViewController new] animated:YES];
 }
-
-@end
+    
+    
+- (UIButton *)button{
+    if(!_button){
+        
+        UIButton* button = [UIButton buttonWithType:UIButtonTypeCustom];
+        button.frame = CGRectMake((MDScreenWidth-100)*0.5, (MDScreenHeight-100)*0.5, 100, 100);
+        [self.view addSubview:button];
+        button.titleLabel.numberOfLines = 0;
+        button.titleLabel.textAlignment = NSTextAlignmentCenter;
+        button.backgroundColor = [[UIColor orangeColor] colorWithAlphaComponent:0.8];
+        [button setTitle:@"Objective-C Button" forState:UIControlStateNormal];
+        
+        _button = button;
+    }
+    return _button;
+}
+    
+    @end
