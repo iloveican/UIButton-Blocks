@@ -51,7 +51,6 @@ Objective-C
      NSLog(@"%s",__func__);
      }];
      */
-     
           
 ```
 
@@ -69,7 +68,7 @@ Objective-C
     ```
     #import "UIButton+Blocks.h"
     ```
-    
+
     If you do the above, you can then write Swift code that uses UIButton+Blocks. For example, in Swift 3:
      
      swift
@@ -86,7 +85,7 @@ Objective-C
             
         }
 
-```
+     ```
 
      
 
