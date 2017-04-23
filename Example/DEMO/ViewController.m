@@ -17,10 +17,11 @@
 @end
 
 @implementation ViewController
+    
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    self.title = @"touchesBegan to SwiftVC";
     UIButton* button = [UIButton buttonWithType:UIButtonTypeCustom];
     button.frame = CGRectMake((MDScreenWidth-100)*0.5, (MDScreenHeight-100)*0.5, 100, 100);
     [self.view addSubview:button];
@@ -30,12 +31,9 @@
 
     //default UIControlEventTouchUpInside
     [button handleClickWithClickBlick:^(UIButton *sender) {
-        NSLog(@"%s",__func__);
-        [self.navigationController pushViewController:[SwiftViewController new] animated:YES];
+        NSLog(@"ViewController %s",__func__);
 
     }];
-    
-    
     
     /*
      [button handleClickEvent:UIControlEventTouchUpInside withClickBlick:^(UIButton *sender) {
@@ -44,6 +42,8 @@
      */
 }
 
-
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+    [self.navigationController pushViewController:[SwiftViewController new] animated:YES];
+}
 
 @end

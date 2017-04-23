@@ -17,10 +17,12 @@ class SwiftViewController: UIViewController {
         let btn = UIButton(frame: CGRect(origin: CGPoint.zero, size: CGSize(width: 100, height: 100)))
         btn.center = view.center
         btn.backgroundColor = UIColor.purple
+        btn.setTitle("SwiftVC", for: UIControlState.normal)
         view.addSubview(btn)
         
         btn.handleClick { (btn:UIButton?) in
-            print("handleClick")
+            print("\("SwiftViewController") \(#function)")
+            
         }
 
         
