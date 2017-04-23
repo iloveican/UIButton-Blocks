@@ -59,7 +59,6 @@ An UIButton Category replace SEL with Block.
      To do this, you must:
 1. Copy the relevant .m and .h files from the UIButton+Blocks src folder into your project
 2. If prompted to create a "bridging header", you should do so. If not prompted and if you don't already have a bridging     header, add one.
-    (For more information on temporary and in-memory databases, read the sqlite documentation on the subject: http://www.sqlite.org/inmemorydb.html)
 3. In your bridging header, add a line that says:
      
     ```objc
@@ -70,7 +69,7 @@ An UIButton Category replace SEL with Block.
      
      
      
-     ```swift
+   ```swift
         let btn = UIButton(frame: CGRect(origin: CGPoint.zero, size: CGSize(width: 100, height: 100)))
         btn.center = view.center
         btn.backgroundColor = UIColor.purple
@@ -81,7 +80,7 @@ An UIButton Category replace SEL with Block.
             print("\("SwiftViewController") \(#function)")
             
         }
-     ```
+   ```
 
      
 
