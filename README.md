@@ -57,12 +57,10 @@ An UIButton Category replace SEL with Block.
      ## Swift   
      You can use UIButton+Blocks in Swift projects too.
      To do this, you must:
-
-    1. Copy the relevant .m and .h files from the UIButton+Blocks src folder into your project.
-    2. If prompted to create a "bridging header", you should do so. If not prompted and if you don't already have a bridging     header, add one.
+1. Copy the relevant .m and .h files from the UIButton+Blocks src folder into your project
+2. If prompted to create a "bridging header", you should do so. If not prompted and if you don't already have a bridging     header, add one.
     (For more information on temporary and in-memory databases, read the sqlite documentation on the subject: http://www.sqlite.org/inmemorydb.html)
-
-     3. In your bridging header, add a line that says:
+3. In your bridging header, add a line that says:
      
     ```objc
     #import "UIButton+Blocks.h"
