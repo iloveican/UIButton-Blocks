@@ -32,7 +32,7 @@ An UIButton Category replace SEL with Block.
 
 ```objc
 
-   UIButton* button = [UIButton buttonWithType:UIButtonTypeCustom];
+    UIButton* button = [UIButton buttonWithType:UIButtonTypeCustom];
     button.frame = CGRectMake((MDScreenWidth-100)*0.5, (MDScreenHeight-100)*0.5, 100, 100);
     [self.view addSubview:button];
     
