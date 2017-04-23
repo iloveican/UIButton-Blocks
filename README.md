@@ -61,11 +61,11 @@ An UIButton Category replace SEL with Block.
 2. If prompted to create a "bridging header", you should do so. If not prompted and if you don't already have a bridging     header, add one.
 3. In your bridging header, add a line that says:
      
-    ```objc
+```objc
     #import "UIButton+Blocks.h"
-    ```
+```
 
-    If you do the above, you can then write Swift code that uses UIButton+Blocks. For example, in Swift 3:
+If you do the above, you can then write Swift code that uses UIButton+Blocks. For example, in Swift 3:
      
      
      
