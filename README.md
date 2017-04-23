@@ -28,7 +28,7 @@ An UIButton Category replace SEL with Block.
 ## Examples
 
 **Code:**
-## Objective-C   
+### Objective-C   
 
 ```objc
 
@@ -55,9 +55,9 @@ An UIButton Category replace SEL with Block.
 ```
 
      
-## Swift   
-     You can use UIButton+Blocks in Swift projects too.
-     To do this, you must:
+### Swift   
+You can use UIButton+Blocks in Swift projects too.
+To do this, you must:
 1. Copy the relevant .m and .h files from the UIButton+Blocks src folder into your project
 2. If prompted to create a "bridging header", you should do so. If not prompted and if you don't already have a bridging     header, add one.
 3. In your bridging header, add a line that says:
