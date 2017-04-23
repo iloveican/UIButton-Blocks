@@ -92,4 +92,4 @@ SIAlertView was created by [Jiang.Zijia](https://github.com/JZJJZJ) in the devel
 
 ## License
 
-SIAlertView is available under the MIT license. See the LICENSE file for more info.
+UIButton+Blocks is available under the MIT license. See the LICENSE file for more info.
