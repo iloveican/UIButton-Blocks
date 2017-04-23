@@ -22,9 +22,8 @@ An UIButton Category replace SEL with Block.
 ## Requirements
 
 - iOS 5.0 and greater
-- ARC
+- ARC/MRC
 
-(If you are having any problems, just select your project -> Build Phases -> Compile Sources, double-click the SIAlertView and add `-fobjc-arc`)
 
 ## Examples
 
