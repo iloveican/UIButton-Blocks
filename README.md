@@ -91,7 +91,7 @@ If you do the above, you can then write Swift code that uses UIButton+Blocks. Fo
 
 ## Credits
 
-SIAlertView was created by [Jiang.Zijia](https://github.com/JZJJZJ) in the development of [MOMO](https://www.immomo.com).
+UIButton-Blocks was created by [Jiang.Zijia](https://github.com/JZJJZJ) in the development of [MOMO](https://www.immomo.com).
 
 ## License
 
