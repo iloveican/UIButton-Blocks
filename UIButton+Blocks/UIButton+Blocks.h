@@ -11,11 +11,11 @@ typedef void (^ActionBlock)(UIButton* sender);
 
 @interface UIButton (Blocks)
 
--(void)handleClickEvent:(UIControlEvents)aEvent withClickBlick:(ActionBlock)buttonClickEvent;
+-(void)handleClickEvent:(UIControlEvents)aEvent withClickBlock:(ActionBlock)buttonClickEvent;
 
 /*
  default UIControlEventTouchUpInside
  */
--(void)handleClickWithClickBlick:(ActionBlock)buttonClickEvent;
+-(void)handleClickWithClickBlock:(ActionBlock)buttonClickEvent;
 
 @end
