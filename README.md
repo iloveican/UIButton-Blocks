@@ -40,14 +40,14 @@ An UIButton Category replace SEL with Block.
     [button setTitle:@"Blocks" forState:UIControlStateNormal];
 
     //default UIControlEventTouchUpInside
-    [button handleClickWithClickBlick:^(UIButton *sender) {
+    [button handleClickWithClickBlock:^(UIButton *sender) {
         NSLog(@"%s",__func__);
 
     }];
     
     
     /*
-     [button handleClickEvent:UIControlEventTouchUpInside withClickBlick:^(UIButton *sender) {
+     [button handleClickEvent:UIControlEventTouchUpInside withClickBlock:^(UIButton *sender) {
      NSLog(@"%s",__func__);
      }];
      */
