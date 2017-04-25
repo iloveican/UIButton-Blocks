@@ -40,14 +40,14 @@ An UIButton Category replace SEL with Block.
     [button setTitle:@"Blocks" forState:UIControlStateNormal];
 
     //default UIControlEventTouchUpInside
-    [button handleClickWithClickBlick:^(UIButton *sender) {
+    [button handleClickWithClickBlock:^(UIButton *sender) {
         NSLog(@"%s",__func__);
 
     }];
     
     
     /*
-     [button handleClickEvent:UIControlEventTouchUpInside withClickBlick:^(UIButton *sender) {
+     [button handleClickEvent:UIControlEventTouchUpInside withClickBlock:^(UIButton *sender) {
      NSLog(@"%s",__func__);
      }];
      */
@@ -60,13 +60,16 @@ You can use UIButton+Blocks in Swift projects too.
 To do this, you must:
 1. Copy the relevant .m and .h files from the UIButton+Blocks src folder into your project
 2. If prompted to create a "bridging header", you should do so. If not prompted and if you don't already have a bridging     header, add one.
+
+ For more information on bridging headers, see [Swift and Objective-C in the Same Project](https://developer.apple.com/library/ios/documentation/Swift/Conceptual/BuildingCocoaApps/MixandMatch.html#//apple_ref/doc/uid/TP40014216-CH10-XID_76).
+
 3. In your bridging header, add a line that says:
      
 ```objc
     #import "UIButton+Blocks.h"
 ```
 
-If you do the above, you can then write Swift code that uses UIButton+Blocks. For example, in Swift 3:
+If you do the above, you can then write Swift code that uses UIButton+Blocks. For example, in Swift 3.0 :
      
      
      
@@ -88,7 +91,7 @@ If you do the above, you can then write Swift code that uses UIButton+Blocks. Fo
 
 ## Credits
 
-SIAlertView was created by [Jiang.Zijia](https://github.com/JZJJZJ) in the development of [MOMO](https://www.immomo.com).
+UIButton-Blocks was created by [Jiang.Zijia](https://github.com/JZJJZJ) in the development of [MOMO](https://www.immomo.com).
 
 ## License
 
