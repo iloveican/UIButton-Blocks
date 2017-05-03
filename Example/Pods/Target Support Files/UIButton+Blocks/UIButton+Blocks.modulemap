@@ -1,0 +1,6 @@
+framework module UIButton_Blocks {
+  umbrella header "UIButton+Blocks-umbrella.h"
+
+  export *
+  module * { export * }
+}
