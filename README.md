@@ -1,6 +1,6 @@
 # UIButton-Blocks
 
-[![platform](https://img.shields.io/badge/platform-iOS%2FAndroid-lightgrey.svg?style=flat)](https://github.com/JZJJZJ/UIButton-Blocks)
+[![platform](http://img.shields.io/cocoapods/p/YYKit.svg?style=flat)](https://github.com/JZJJZJ/UIButton-Blocks)
 [![GitHub license](https://img.shields.io/github/license/mashape/apistatus.svg?style=flat)](https://github.com/JZJJZJ/UIButton-Blocks/blob/master/LICENSE)
 [![CocoaPods](http://img.shields.io/cocoapods/v/YYKit.svg?style=flat)](http://cocoapods.org/?q=UIButton%2BBlocks)
 
