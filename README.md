@@ -1,4 +1,7 @@
 # UIButton-Blocks
+
+[![GitHub license](https://img.shields.io/github/license/mashape/apistatus.svg?style=flat)](https://github.com/JZJJZJ/UIButton-Blocks/blob/master/LICENSE)
+
 =============
 
 An UIButton Category replace SEL with Block.
