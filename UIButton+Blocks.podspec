@@ -5,7 +5,7 @@ Pod::Spec.new do |s|
   s.name         = "UIButton+Blocks"
   s.version      = "0.1.0"
 
-  s.summary      = "a component of UIButton  on iOS"
+  s.summary      = "an extension of UIButton  on iOS"
 
   s.description  = " UIButton was created in a time before blocks, ARC, and judging by its naming
    Lets modernize this shizzle with some blocks goodness."
@@ -23,7 +23,7 @@ Pod::Spec.new do |s|
   s.source       = { :git => "https://github.com/JZJJZJ/UIButton-Blocks.git", :tag => s.version }
 
 
-  s.source_files  = "UIButton+Blocks/**/*.{h,m}"
+  s.source_files  = "UIButton+Blocks/*"
   s.exclude_files = "Classes/Exclude"
 
   end
