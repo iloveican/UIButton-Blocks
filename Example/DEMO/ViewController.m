@@ -25,7 +25,7 @@
     [self.view addSubview:self.button];
     
     //default UIControlEventTouchUpInside
-    [self.button handleClickWithClickBlock:^(UIButton *sender) {
+    [self.button handleTouchUpInsideEventWithBlock:^(UIButton *sender) {
         NSLog(@"ViewController %s",__func__);
         
     }];

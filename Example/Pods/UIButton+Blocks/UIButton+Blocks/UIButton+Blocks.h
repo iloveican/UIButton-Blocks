@@ -16,6 +16,6 @@ typedef void (^ActionBlock)(UIButton* sender);
 /*
  default UIControlEventTouchUpInside
  */
--(void)handleClickWithClickBlick:(ActionBlock)buttonClickEvent;
+-(void)handleClickWithClickBlck:(ActionBlock)buttonClickEvent;
 
 @end

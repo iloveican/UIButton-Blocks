@@ -17,9 +17,9 @@ class SwiftViewController: UIViewController {
         view.backgroundColor = UIColor.white
         view.addSubview(self.button)
         
-        
-        self.button.handleClick { (btn:UIButton?) in
+        self.button .handleTouchUpInsideEvent { (_) in
             print("\("SwiftViewController") \(#function)")
+
         }
     }
     

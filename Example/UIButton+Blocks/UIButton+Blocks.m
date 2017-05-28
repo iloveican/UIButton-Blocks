@@ -13,24 +13,24 @@ static char *overViewKey;
 @implementation UIButton (Blocks)
 
 
--(void)handleClickWithClickBlock:(ActionBlock)buttonClickEvent{
+-(void)handleTouchUpInsideEventWithBlock:(ActionBlock)buttonClickEvent{
     
-    [self handleClickEvent:UIControlEventTouchUpInside withClickBlock:buttonClickEvent];
+    [self handleEvent:UIControlEventTouchUpInside withBlock:buttonClickEvent];
 
 }
 
--(void)handleClickEvent:(UIControlEvents)aEvent withClickBlock:(ActionBlock)buttonClickEvent
+-(void)handleEvent:(UIControlEvents)aEvent withBlock:(ActionBlock)buttonClickEvent
 {
     objc_setAssociatedObject(self, &overViewKey, buttonClickEvent, OBJC_ASSOCIATION_COPY_NONATOMIC);
-    [self addTarget:self action:@selector(buttonClock) forControlEvents:aEvent];
+    [self addTarget:self action:@selector(click) forControlEvents:aEvent];
 }
 
--(void)buttonClock
+-(void)click
 {
-    ActionBlock blockClock = objc_getAssociatedObject(self, &overViewKey);
-    if (blockClock != nil)
+    ActionBlock block = objc_getAssociatedObject(self, &overViewKey);
+    if (block != nil)
     {
-        blockClock(self);
+        block(self);
     }
 }
 
