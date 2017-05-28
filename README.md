@@ -45,14 +45,14 @@ An UIButton Category replace SEL with Block.
     [button setTitle:@"Blocks" forState:UIControlStateNormal];
 
     //default UIControlEventTouchUpInside
-    [button handleClickWithClickBlock:^(UIButton *sender) {
+    [button handleTouchUpInsideEventWithBlock:^(UIButton *sender) {
         NSLog(@"%s",__func__);
 
     }];
     
     
     /*
-     [button handleClickEvent:UIControlEventTouchUpInside withClickBlock:^(UIButton *sender) {
+     [button handleEvent:UIControlEventTouchUpInside withBlock:^(UIButton *sender) {
      NSLog(@"%s",__func__);
      }];
      */
@@ -85,7 +85,7 @@ If you do the above, you can then write Swift code that uses UIButton+Blocks. Fo
         btn.setTitle("SwiftVC", for: UIControlState.normal)
         view.addSubview(btn)
         
-        btn.handleClick { (btn:UIButton?) in
+        btn.handleTouchUpInsideEvent { (btn:UIButton?) in
             print("\("SwiftViewController") \(#function)")
             
         }
