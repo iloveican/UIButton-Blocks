@@ -22,15 +22,15 @@ static char *overViewKey;
 -(void)handleClickEvent:(UIControlEvents)aEvent withClickBlock:(ActionBlock)buttonClickEvent
 {
     objc_setAssociatedObject(self, &overViewKey, buttonClickEvent, OBJC_ASSOCIATION_COPY_NONATOMIC);
-    [self addTarget:self action:@selector(buttonClick) forControlEvents:aEvent];
+    [self addTarget:self action:@selector(buttonClock) forControlEvents:aEvent];
 }
 
--(void)buttonClick
+-(void)buttonClock
 {
-    ActionBlock blockClick = objc_getAssociatedObject(self, &overViewKey);
-    if (blockClick != nil)
+    ActionBlock blockClock = objc_getAssociatedObject(self, &overViewKey);
+    if (blockClock != nil)
     {
-        blockClick(self);
+        blockClock(self);
     }
 }
 
