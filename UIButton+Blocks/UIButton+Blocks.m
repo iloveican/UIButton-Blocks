@@ -2,35 +2,35 @@
 //  UIButton+Block.m
 //  DEMO7
 //
-//  Created by AcFun on 16/5/27.
+//  Created by J on 16/5/27.
 //  Copyright © 2016年 J. All rights reserved.
 //
 
 #import "UIButton+Blocks.h"
-#import <objc/runtime.h>
+#import <objc/message.h>
 static char *overViewKey;
 
 @implementation UIButton (Blocks)
 
 
--(void)handleClickWithClickBlock:(ActionBlock)buttonClickEvent{
+-(void)handleTouchUpInsideEventWithBlock:(ActionBlock)buttonClickEvent{
     
-    [self handleClickEvent:UIControlEventTouchUpInside withClickBlock:buttonClickEvent];
+    [self handleEvent:UIControlEventTouchUpInside withBlock:buttonClickEvent];
 
 }
 
--(void)handleClickEvent:(UIControlEvents)aEvent withClickBlock:(ActionBlock)buttonClickEvent
+-(void)handleEvent:(UIControlEvents)aEvent withBlock:(ActionBlock)buttonClickEvent
 {
     objc_setAssociatedObject(self, &overViewKey, buttonClickEvent, OBJC_ASSOCIATION_COPY_NONATOMIC);
-    [self addTarget:self action:@selector(buttonClock) forControlEvents:aEvent];
+    [self addTarget:self action:@selector(click) forControlEvents:aEvent];
 }
 
--(void)buttonClock
+-(void)click
 {
-    ActionBlock blockClick = objc_getAssociatedObject(self, &overViewKey);
-    if (blockClick != nil)
+    ActionBlock block = objc_getAssociatedObject(self, &overViewKey);
+    if (block != nil)
     {
-        blockClick(self);
+        block(self);
     }
 }
 
