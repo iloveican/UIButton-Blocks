@@ -1,12 +1,12 @@
 PODS:
-  - UIButton+Blocks (0.1.0)
+  - UIButton+Blocks (1.0.0)
 
 DEPENDENCIES:
-  - UIButton+Blocks
+  - UIButton+Blocks (~> 1.0.0)
 
 SPEC CHECKSUMS:
-  UIButton+Blocks: 6750848f057c1483a71bd154e6d88bbf162417cf
+  UIButton+Blocks: f298c55eae74ffceb6723de474acfbf23b1bbbc5
 
-PODFILE CHECKSUM: 3dc894cad2466676b8ca614018c54eaa911596d6
+PODFILE CHECKSUM: aed66b790f90a8482583d19fce1abdd11deef619
 
 COCOAPODS: 1.2.1

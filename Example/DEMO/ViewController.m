@@ -30,11 +30,7 @@
         
     }];
     
-    /*
-     [self.button handleClickEvent:UIControlEventTouchUpInside withClickBlick:^(UIButton *sender) {
-     NSLog(@"%s",__func__);
-     }];
-     */
+
 }
     
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{

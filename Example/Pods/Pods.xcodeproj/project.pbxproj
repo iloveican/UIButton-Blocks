@@ -8,13 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		096136F4FF1C64EFC0C111FCB83DC001 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		546BD73B152D9D0968ABF46CAE230AE8 /* UIButton+Blocks-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0609AD46DF85554284E86A3583E836CB /* UIButton+Blocks-dummy.m */; };
 		5FDD68BDCC95F236E44AB4C719C72A9D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 		64BAD96E7235D42EAF1EE8928B508AA5 /* UIButton+Blocks-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 31EE30CC6B5D6DE3E5E61DC138630C2A /* UIButton+Blocks-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8E26C6AB7AC42B0AA10F931C2B631F68 /* UIButton+Blocks.h in Headers */ = {isa = PBXBuildFile; fileRef = B851F6613034D60E1B7E5BF714E5D3D9 /* UIButton+Blocks.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A0817C2C452C8399055722B6053C4FD9 /* Pods-DEMO-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9656808DBB393CBD077A0742F5D645F2 /* Pods-DEMO-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		ABA6665096A933042C302D8B18F8359D /* UIButton+Blocks.m in Sources */ = {isa = PBXBuildFile; fileRef = 019AB61C0755133A1F00230A502EB224 /* UIButton+Blocks.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B25D9108EFCAD980CBCFF2A341A8F1CD /* UIButton+Blocks-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0609AD46DF85554284E86A3583E836CB /* UIButton+Blocks-dummy.m */; };
 		D32157460C3FE25E14DFDB423D618E9A /* Pods-DEMO-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FDC485D261B4975A1D33956AFAF131E /* Pods-DEMO-dummy.m */; };
-		ED9775EE9EF6608009B5A03F408638FA /* UIButton+Blocks.m in Sources */ = {isa = PBXBuildFile; fileRef = 019AB61C0755133A1F00230A502EB224 /* UIButton+Blocks.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -194,7 +194,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7780D103B880EFD698CC716DD98DBC82 /* Build configuration list for PBXNativeTarget "UIButton+Blocks" */;
 			buildPhases = (
-				6A5D1CF89695A3BBCA0E096E0FFEEC3D /* Sources */,
+				E93BBD648880FA05284B7853F5BDA238 /* Sources */,
 				3E6D5760ADD608025FEADE168FFE9815 /* Frameworks */,
 				FB517AA08C5CEBA1DC55D405881EAEAB /* Headers */,
 			);
@@ -253,20 +253,20 @@
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		6A5D1CF89695A3BBCA0E096E0FFEEC3D /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				546BD73B152D9D0968ABF46CAE230AE8 /* UIButton+Blocks-dummy.m in Sources */,
-				ED9775EE9EF6608009B5A03F408638FA /* UIButton+Blocks.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		8485AF5E6CB13C5DF43FEA1160F1E4D2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				D32157460C3FE25E14DFDB423D618E9A /* Pods-DEMO-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E93BBD648880FA05284B7853F5BDA238 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B25D9108EFCAD980CBCFF2A341A8F1CD /* UIButton+Blocks-dummy.m in Sources */,
+				ABA6665096A933042C302D8B18F8359D /* UIButton+Blocks.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

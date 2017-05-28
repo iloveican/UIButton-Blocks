@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		D0FE4C4C72CFFE9EE437499F /* Pods_DEMO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82D8012438551A84D52F31B1 /* Pods_DEMO.framework */; };
-		FA48A8371EB9A55D0092AF5E /* UIButton+Blocks.m in Sources */ = {isa = PBXBuildFile; fileRef = FA48A8361EB9A55D0092AF5E /* UIButton+Blocks.m */; };
 		FA4A073C1EACD79E00B19F72 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FA4A073B1EACD79E00B19F72 /* main.m */; };
 		FA4A073F1EACD79E00B19F72 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FA4A073E1EACD79E00B19F72 /* AppDelegate.m */; };
 		FA4A07421EACD79E00B19F72 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA4A07411EACD79E00B19F72 /* ViewController.m */; };
@@ -22,8 +21,6 @@
 		82D8012438551A84D52F31B1 /* Pods_DEMO.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DEMO.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A25EC4BCEBA21BB945F82D41 /* Pods-DEMO.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DEMO.release.xcconfig"; path = "Pods/Target Support Files/Pods-DEMO/Pods-DEMO.release.xcconfig"; sourceTree = "<group>"; };
 		AEEB682050CCA6224B0EFDF0 /* Pods-DEMO.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DEMO.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DEMO/Pods-DEMO.debug.xcconfig"; sourceTree = "<group>"; };
-		FA48A8351EB9A55D0092AF5E /* UIButton+Blocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+Blocks.h"; sourceTree = "<group>"; };
-		FA48A8361EB9A55D0092AF5E /* UIButton+Blocks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Blocks.m"; sourceTree = "<group>"; };
 		FA4A07371EACD79E00B19F72 /* DEMO.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DEMO.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA4A073B1EACD79E00B19F72 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		FA4A073D1EACD79E00B19F72 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -67,19 +64,9 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		FA48A8341EB9A55D0092AF5E /* UIButton+Blocks */ = {
-			isa = PBXGroup;
-			children = (
-				FA48A8351EB9A55D0092AF5E /* UIButton+Blocks.h */,
-				FA48A8361EB9A55D0092AF5E /* UIButton+Blocks.m */,
-			);
-			path = "UIButton+Blocks";
-			sourceTree = "<group>";
-		};
 		FA4A072E1EACD79E00B19F72 = {
 			isa = PBXGroup;
 			children = (
-				FA48A8341EB9A55D0092AF5E /* UIButton+Blocks */,
 				FA4A07391EACD79E00B19F72 /* DEMO */,
 				FA4A07381EACD79E00B19F72 /* Products */,
 				E35D4151DC62713757BC886A /* Pods */,
@@ -246,7 +233,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA4A07421EACD79E00B19F72 /* ViewController.m in Sources */,
-				FA48A8371EB9A55D0092AF5E /* UIButton+Blocks.m in Sources */,
 				FA4A073F1EACD79E00B19F72 /* AppDelegate.m in Sources */,
 				FA4A073C1EACD79E00B19F72 /* main.m in Sources */,
 				FA8783091EAD214F008EB7B3 /* SwiftViewController.swift in Sources */,
@@ -379,6 +365,7 @@
 				SWIFT_OBJC_BRIDGING_HEADER = "DEMO/DEMO-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
+				USER_HEADER_SEARCH_PATHS = "${SRCROOT}/**";
 			};
 			name = Debug;
 		};
@@ -395,6 +382,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "DEMO/DEMO-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
+				USER_HEADER_SEARCH_PATHS = "${SRCROOT}/**";
 			};
 			name = Release;
 		};

@@ -2,7 +2,7 @@
 //  UIButton+Block.h
 //  DEMO7
 //
-//  Created by AcFun on 16/5/27.
+//  Created by J on 16/5/27.
 //  Copyright © 2016年 J. All rights reserved.
 //
 
@@ -11,11 +11,11 @@ typedef void (^ActionBlock)(UIButton* sender);
 
 @interface UIButton (Blocks)
 
--(void)handleClickEvent:(UIControlEvents)aEvent withClickBlick:(ActionBlock)buttonClickEvent;
+-(void)handleEvent:(UIControlEvents)aEvent withBlock:(ActionBlock)block;
 
 /*
  default UIControlEventTouchUpInside
  */
--(void)handleClickWithClickBlck:(ActionBlock)buttonClickEvent;
+-(void)handleTouchUpInsideEventWithBlock:(ActionBlock)block;
 
 @end
