@@ -13,9 +13,8 @@ typedef void (^ActionBlock)(UIButton* sender);
 
 -(void)handleEvent:(UIControlEvents)aEvent withBlock:(ActionBlock)block;
 
-/*
- default UIControlEventTouchUpInside
- */
+
+///default UIControlEventTouchUpInside
 -(void)handleTouchUpInsideEventWithBlock:(ActionBlock)block;
 
 @end

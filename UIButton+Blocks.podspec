@@ -3,7 +3,7 @@ Pod::Spec.new do |s|
 
 
   s.name         = "UIButton+Blocks"
-  s.version      = "0.1.0"
+  s.version      = "1.0.0"
 
   s.summary      = "an extension of UIButton  on iOS"
 
