@@ -37,7 +37,7 @@ An UIButton Category replace SEL with Block.
         
     #import "UIButton+Blocks.h"
     
-    CGFloat width = [UIScreen mainScreen].bounds.size.width;
+    CGFloat   width  = [UIScreen mainScreen].bounds.size.width;
     UIButton* button = [UIButton buttonWithType:UIButtonTypeCustom];
     button.frame = CGRectMake((width-100)*0.5, (width-100)*0.5, 100, 100);
     [self.view addSubview:button];
@@ -49,13 +49,6 @@ An UIButton Category replace SEL with Block.
         NSLog(@"%s",__func__);
 
     }];
-    
-    
-    /*
-     [button handleEvent:UIControlEventTouchUpInside withBlock:^(UIButton *sender) {
-     NSLog(@"%s",__func__);
-     }];
-     */
           
 ```
 
