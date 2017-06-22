@@ -37,8 +37,9 @@ An UIButton Category replace SEL with Block.
         
     #import "UIButton+Blocks.h"
     
+    CGFloat width = [UIScreen mainScreen].bounds.size.width;
     UIButton* button = [UIButton buttonWithType:UIButtonTypeCustom];
-    button.frame = CGRectMake((MDScreenWidth-100)*0.5, (MDScreenHeight-100)*0.5, 100, 100);
+    button.frame = CGRectMake((width-100)*0.5, (width-100)*0.5, 100, 100);
     [self.view addSubview:button];
     
     button.backgroundColor = [[UIColor orangeColor] colorWithAlphaComponent:0.8];
