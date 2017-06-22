@@ -29,13 +29,14 @@ An UIButton Category replace SEL with Block.
 - ARC/MRC
 
 
-## Examples
-
-**Code:**
-### Objective-C   
-
+## How To Use
+  
 ```objc
-
+    
+    Objective-C:
+    
+    #import "UIButton+Blocks.h"
+    
     UIButton* button = [UIButton buttonWithType:UIButtonTypeCustom];
     button.frame = CGRectMake((MDScreenWidth-100)*0.5, (MDScreenHeight-100)*0.5, 100, 100);
     [self.view addSubview:button];
@@ -78,6 +79,9 @@ If you do the above, you can then write Swift code that uses UIButton+Blocks. Fo
      
      
    ```swift
+   
+        Swift:
+        
         let btn = UIButton(frame: CGRect(origin: CGPoint.zero, size: CGSize(width: 100, height: 100)))
         btn.center = view.center
         btn.backgroundColor = UIColor.purple
