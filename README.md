@@ -31,10 +31,10 @@ An UIButton Category replace SEL with Block.
 
 ## How To Use
   
+### Objective-C
+
 ```objc
-    
-    Objective-C:
-    
+        
     #import "UIButton+Blocks.h"
     
     UIButton* button = [UIButton buttonWithType:UIButtonTypeCustom];
