@@ -45,7 +45,6 @@ An UIButton Category replace SEL with Block.
     button.backgroundColor = [[UIColor orangeColor] colorWithAlphaComponent:0.8];
     [button setTitle:@"Blocks" forState:UIControlStateNormal];
 
-    //default UIControlEventTouchUpInside
     [button handleTouchUpInsideEventWithBlock:^(UIButton *sender) {
         NSLog(@"%s",__func__);
 
