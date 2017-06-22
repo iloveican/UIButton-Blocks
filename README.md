@@ -80,7 +80,6 @@ If you do the above, you can then write Swift code that uses UIButton+Blocks. Fo
      
    ```swift
    
-        Swift:
         
         let btn = UIButton(frame: CGRect(origin: CGPoint.zero, size: CGSize(width: 100, height: 100)))
         btn.center = view.center
